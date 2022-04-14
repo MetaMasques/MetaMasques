@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <title>Landing Page</title>
 <body>
   <nav class="navbar" id="nav-bar">
-        <a href="#" class="navbar-brand" id="logo-link"><img id="header-img" src="/images/skullskin.jpg" alt="company-logo"></a>
+        <a href="#" class="navbar-brand" id="logo-link"><img id="header-img" src="skullskin.jpg" alt="company-logo"></a>
      <div id="ball1"></div>
      <div id="ball2"></div>
      <div id="ball3"></div>
@@ -23,7 +23,7 @@
 <div class="container-fluid">
  <section id="sectiona">
      <div class="d-flex justify-content-evenly align-self-center pt-5 mt-4" id="sectionamedia"> 
-   <iframe src= "/images/MMLOGO.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+   <iframe src= "MMLOGO.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
       <div id="first-info">
         <h1><b>Metamasque Collection</b></h1>
              <p>When you're invited to a masquerade in the metaverse, you dont want to be rushing around, tripping over boxes of crayons and spreadsheets, looking for some jpeg file to cover your avatars face, And we all know how important it is to show up looking your best to social events. Thats why here at Metamasque we have created an extensive collection of exclusive, 1/1 masks that are sure to make you the envy of your virtual peers.
@@ -41,60 +41,23 @@ differing rarity
   </section>
 <section id="sectionb">
   <div class="media-container d-flex justify-content-evenly flex-row flex-wrap gap-3 p-2">     
-<iframe src= "/images/cyborgalactic.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-  <iframe src= "/images/diamondshorthorndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-    <iframe src= "/images/flamelonghorndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-    <iframe src= "/images/yellowloopclothblue.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-  <iframe src= "/images/camobaghorndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-    <iframe src= "/images/starrydog.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-    <iframe src= "/images/diamondtweetdark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-  <iframe src= "/images/mktcrshclowndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-      <iframe src= "/images/goldentweetpink.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
-    <div class="align-self-center p-4"><p style="font-size: 2em;">Something about they can make an offer and whatever they like</p>
+<iframe src= "cyborgalactic.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+  <iframe src= "diamondshorthorndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+    <iframe src= "flamelonghorndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+    <iframe src= "yellowloopclothblue.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+  <iframe src= "camobaghorndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+    <iframe src= "starrydog.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+    <iframe src= "diamondtweetdark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+  <iframe src= "mktcrshclowndark.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+      <iframe src= "goldentweetpink.gif"  frameborder="0" scrolling="no" width="388px" height="366px"></iframe>
+    <div class="align-self-center p-4"><p style="font-size: 2em;">Check out the full collection whilst you're here!</p>
       <a href="https://explorer.loopring.io/collections/0xc4476d41ca29ed186b901432c6f2c3702f63e2cc" role="button" class=" buttongeneral btn btn-dark m-auto p-auto">View The Full Collection</a>
-            <a href="#formbox" role="button" class=" buttongeneral btn btn-dark m-auto p-auto">Get In Touch</a>
+            <br><p id="getintouch" style="font-size: 1em;">If you would like to make an offer please get in touch. Either Email us at <b>metamasquesweb@gmail.com </b>
+        or catch us on discord by direct messaging <b>metamasques#7747 </b>. </p>
     </div>
-            <div> id="formbox">
-            <form action="/submitted/" method="POST"
-              {% csrf_token %}
-                <h2 class="text-center">
-                    Get In Touch
-                </h2>   
-                <div class="form-group mt-2">
-                    <label>Email Address</label>
-                    <input type="email" class="form-control"
-                    placeholder="Someone@example.com" required>
-                  </div>
-                  <div class="form-group mt-2">
-                    <label>Discord</label>
-                    <input type="text" class="form-control"
-                    placeholder="DiscordName#1111">
-                  </div>
-                  <div class="form-group mt-2">
-                    <label>Which NFT Are You Interested In?</label>
-                    <input type="text" class="form-control"
-                    placeholder="LoopRing NFT Name" required>
-                  </div>
-                  <div class="form-group mt-2">
-                    <label>Your Offer?</label>
-                    <input type="text" class="form-control"
-                    placeholder="Not required">
-                  </div>
-                  <a href="" role="button" class=" buttongeneral btn btn-dark mt-3">Submit</a>
-
-            </form>
-            <div class="mt-3" id="contactinfo">
-                <li>
-                    Discord: metamasques#7747
-                </li>
-                <li>
-                    Email Address: metamasquesweb@gmail.com
-                </li>
-            </div>
-        </div>
   </div>
   </section>
-    
+   
      </div>
 </body>
 
