@@ -1,0 +1,306 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    color: white;
+    background: white;
+    line-height: 1.6;
+    overflow: hidden;
+  }
+  
+  #nav-bar {
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: black;
+  
+  }
+  
+  #logo-link {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    animation: invisible;
+    animation-duration: 5s;
+  }
+  
+  #header-img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav-links {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    justify-content: flex-end;
+    float: right;
+  }
+  
+  .nav-link {
+    color: azure;
+    margin: 15px;
+  }
+  
+  
+  #ball1 {
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    background: white;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 2s;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+  }
+  
+  #ball2 {
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    background: white;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 3s;
+    position: absolute;
+    left: 65px;
+    top: 40px;
+  }
+  #ball3 {
+    height: 10px;
+    width: 10px;
+    margin: 10px;
+    background: white;
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-duration: 5s;
+    position: absolute;
+    left: 80px;
+    top: 40px;
+  }
+  @media only screen and (max-width: 600px) {
+    #ball1, #ball2, #ball3 {
+      background: rgba(0, 0, 0, 0);
+    }
+  }
+  @keyframes bounce {
+      0%{
+        left: 10px;
+      transform:rotate(0deg)
+                translate(-30px)
+                rotate(0deg);
+    
+    }
+    100%{
+      left: 10px;
+      transform:rotate(360deg)
+                translate(-30px)
+                rotate(-360deg);
+    }
+  }
+  
+  @keyframes invisible {
+    0% {
+      top: -100px;
+    }
+    100% {
+      top: 2px;
+    }
+  }
+  
+  .container-fluid {
+    height: 100vh;
+    background: black;
+    position: absolute;
+    top: 70px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+    overflow-y: scroll;
+    
+  }
+  
+  section {
+    min-height: 100vh;
+    width: 100%;
+    background: black;
+    scroll-snap-align: center;
+  }
+  
+  #sectiona {
+    background: url('https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png') no-repeat center center/cover;
+    padding-top: 5em;
+  }
+  
+  @media only screen and (max-width: 600px) {  
+    #sectionamedia {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: wrap column;
+      font-size: 1rem;
+    }
+  }
+  
+  
+  #first-info {
+    width: 700px;
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  #sectionb {
+        background: url('https://wallpaperaccess.com/full/1567665.png') no-repeat center center/cover;
+        z-index: 1;
+  }
+  
+  .media-container {
+    height: fit-content;
+    text-align: center;
+    padding: 3em;
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .media-container {
+      display: inline-flex;
+      justify-content: space-evenly;
+      flex-flow: wrap column;
+    }
+  }
+  
+  iframe {
+    border-radius: 12%;
+    border: solid;
+    border-color: black;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    iframe {
+      -webkit-transform: scale(0.4);
+      transform: scale(0.4);
+    }
+  }
+  
+  #short-info {
+    width: 50%;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    color: azure;
+  }
+  
+  #links-container {
+    height: 100%;
+    width: 100%;
+    margin-top: 8em;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+  }
+  
+  
+  #art-title {
+    position: relative;
+    border-bottom: solid;
+  }
+  
+  #links-list {
+    list-style-type: none;
+    font-size: 1em;
+  }
+  
+  li {
+    margin-top: 15px;
+  }
+  
+  .here {
+    text-decoration: none;
+    border-bottom: solid;
+    color: white;
+    border-radius: 10%;
+    border-color: red;
+  }
+  
+  #footer {
+    font-size: 1.2em;
+    text-align: center;
+    position: relative;
+    bottom: -200px;
+  }
+  
+  #form-title {
+    position: relative;
+    font-size: 2em;
+  }
+  
+  .formcontainer {
+    width: 450px;
+    height: 160px;
+    z-index: 0;
+  } 
+  
+  #form {
+    display: block;
+    margin: 10px auto;
+  /*   margin-top: 70px; */
+  }
+  
+  #email {
+    height: 35px;
+    width: 400px;
+    align-self: center;
+    
+  }
+  
+  
+  
+  
+  #copyright {
+    font-size: 0.9em;
+  }
+  
+  
+  .formwrapper {
+      display: flex;
+      flex-direction: column;
+      border: 10em;
+      padding: 50px;
+      margin: 50px;
+  }
+  
+  #contactinfo {
+      display: inline-block;
+      list-style-type: none;
+      justify-content: center;
+      align-items: center;
+  }
+  #formbox {
+      color: rgb(255, 255, 255);
+      box-shadow: rgba(212, 211, 211, 0.664) 0px 50px 100px -20px, rgba(0, 0, 0, 0.733) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      padding: 2.5em;
+      margin: 5em;
+      width: 400px;
+      background-color: rgba(0, 0, 0, 0.50);
+  }
